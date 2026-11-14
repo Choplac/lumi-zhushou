@@ -1,0 +1,6 @@
+# per-PC settings and run output (screenshots can show your name and UID)
+local.env
+shots/
+bot.log
+.venv/
+__pycache__/
