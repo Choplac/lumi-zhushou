@@ -1,5 +1,7 @@
 # Ladder team 1 (player's lineup 11-14 09:30; fair play, level 50)
 
+English | [简体中文](team.zh-CN.md)
+
 1. (now 2nd) 暗影兔·异 (shadow): trait — on entry +1 attack if an enemy is marked; LIGHT mark → also +1 attack
    +1 defence and swap cooldown reset. 影刃突击 (5, 80): shadow mark + own +1 attack, targets light-marked
    first. 交接棒 (4, 30): hit, leave, hand own attack/defence levels to the next 噜咪.

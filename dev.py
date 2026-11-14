@@ -6,6 +6,7 @@ Usage:
   dev.py swipe X1 Y1 X2 Y2 [ms]
   dev.py back
   dev.py crop name X1 Y1 X2 Y2 [src]   cut a button template from a shot into tpl/<name>.png
+  dev.py share [name]       zip your version of the project (no screenshots, no local.env) to send to the maintainer
 """
 import os, subprocess, sys, pathlib
 import numpy as np
@@ -75,6 +76,20 @@ if __name__ == "__main__":
         swipe(*a[1:6]) if len(a) > 5 else swipe(*a[1:5])
     elif a[0] == "back":
         back()
+    elif a[0] == "share":
+        import zipfile, datetime
+        skip_dirs = {"shots", ".venv", "__pycache__", ".git"}
+        skip_files = {"local.env", "bot.log"}
+        name = a[1] if len(a) > 1 else "lumi-share"
+        out = ROOT.parent / f"{name}-{datetime.datetime.now():%Y%m%d-%H%M}.zip"
+        n = 0
+        with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
+            for f in sorted(ROOT.rglob("*")):
+                rel = f.relative_to(ROOT)
+                if f.is_dir() or rel.parts[0] in skip_dirs or rel.name in skip_files or f.suffix == ".zip":
+                    continue
+                z.write(f, pathlib.Path("lumi-zhushou") / rel); n += 1
+        print(f"{out}  ({n} files; screenshots and local.env left out)")
     elif a[0] == "crop":
         name, x1, y1, x2, y2 = a[1], *map(int, a[2:6])
         src = SHOTS / f"{a[6] if len(a) > 6 else 'last'}.png"

@@ -140,6 +140,7 @@ python dev.py shot NAME            # screenshot → shots/NAME.png + NAME_small.
 python dev.py tap X Y              # full-resolution coordinates (small-image x2)
 python dev.py swipe X1 Y1 X2 Y2 MS # same point + long MS = long-press
 python dev.py crop NAME X1 Y1 X2 Y2 SRC   # cut tpl/NAME.png from shots/SRC.png
+python dev.py share NAME           # zip your version to send back (no screenshots/local.env)
 ```
 
 ## 7. Things learned the hard way
@@ -157,6 +158,12 @@ python dev.py crop NAME X1 Y1 X2 Y2 SRC   # cut tpl/NAME.png from shots/SRC.png
 - `production.md`: buildings, recipes, times, and what fleets pay per item.
 - `team.md`: the ladder team's skills and the fight plan.
 
-## 9. Fair use
+Each has a Chinese version (`*.zh-CN.md`).
+
+## 9. Contributing
+
+No coding needed: an AI assistant makes the change, and the zip goes back through the guild chat. GitHub is optional. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## 10. Fair use
 
 This plays your own account the way you would, at human speed, through the emulator's screen. Use it at your own risk: the game's terms may not allow automation.

@@ -1,5 +1,7 @@
 # 闪耀吧！噜咪 — production table (read from Manage, 2026-11-14 08:20 PT)
 
+English | [简体中文](production.zh-CN.md)
+
 Time = one unit at that building. Stock = 已有 when read. Fleet value = per unit on the whale fleet
 (only the produce tab is known so far; dishes / materials / crystal tabs get captured the next time a fleet is empty).
 

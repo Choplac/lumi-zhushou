@@ -1,5 +1,7 @@
 # Menu map (tour 11-14)
 
+English | [简体中文](menus.zh-CN.md)
+
 Full-res tap coordinates (720x1280). "Auto" = the bot's `freebies`/`claim` step does it.
 
 ## Free things

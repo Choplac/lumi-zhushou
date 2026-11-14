@@ -140,6 +140,7 @@ python dev.py shot 名字            # 截图 → shots/名字.png + 名字_smal
 python dev.py tap X Y              # 原图坐标（小图坐标 x2）
 python dev.py swipe X1 Y1 X2 Y2 毫秒 # 起点终点相同 + 时间长 = 长按
 python dev.py crop 名字 X1 Y1 X2 Y2 来源   # 从 shots/来源.png 截出 tpl/名字.png
+python dev.py share 名字           # 打包你的版本发回来（不含截图和 local.env）
 ```
 
 ## 7. 踩过的坑
@@ -157,8 +158,12 @@ python dev.py crop 名字 X1 Y1 X2 Y2 来源   # 从 shots/来源.png 截出 tpl
 - `production.md`：建筑、配方、时间，以及船队每种物品给多少。
 - `team.md`：天梯阵容的技能和打法。
 
-（这三份笔记目前是英文的。）
+（每份笔记都有中文版：`menus.zh-CN.md`、`production.zh-CN.md`、`team.zh-CN.md`。）
 
-## 9. 使用须知
+## 9. 一起改进
+
+不会写代码也能参与：让 AI 来改，用公会群发压缩包，不需要 GitHub。见 [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md)。
+
+## 10. 使用须知
 
 助手以人的速度、通过模拟器画面操作你自己的账号，和你亲手玩一样。风险自负：游戏条款可能不允许自动化。
