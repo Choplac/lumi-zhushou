@@ -1,5 +1,7 @@
 # 噜咪助手 (lumi-zhushou)
 
+English | [简体中文](README.zh-CN.md)
+
 A helper that plays the daily routine of **闪耀吧！噜咪** on the MuMu Android emulator.
 It works through adb, finding things on screen by template matching, and it is built to be driven by a Claude Code session.
 
