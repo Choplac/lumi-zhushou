@@ -162,7 +162,7 @@ python dev.py share 名字           # 打包你的版本发回来（不含截�
 
 ## 9. 一起改进
 
-不会写代码也能参与（怎么装 AI 编程助手，见 Word 文档 `docs/AI编程助手使用指南.docx`）：让 AI 来改，用公会群发压缩包，不需要 GitHub。见 [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md)。
+不会写代码也能参与（怎么装 AI 编程助手，见 Word 文档 `docs/AI助手快速上手.docx`）：让 AI 来改，用公会群发压缩包，不需要 GitHub。见 [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md)。
 
 ## 10. 使用须知
 
